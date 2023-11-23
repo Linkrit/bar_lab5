@@ -1,0 +1,154 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"  />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css" >
+        .auto-style1 {
+            width: 100%;
+            height: 678px;
+            background-color:floralwhite      
+        }
+        .auto-style2 {
+            height: 139px;
+            width: 20%;
+            background-color:cadetblue;
+        }
+        .auto-style4 {
+            width: 363px;
+            background-color:cadetblue;
+        }
+        .auto-style5 {
+            width: 100%;
+            font-size:40px
+            
+           
+        }
+        .auto-style6 {
+            width: 100%;
+            text-align:center;
+            font-size: 30px;
+        }
+        .auto-style7 {
+            width: 100%;
+            text-align:center;
+            font-size: 30px;
+        }
+        .auto-style8 {
+            height: 139px;
+            width: 1079px;
+        }
+        .auto-style11 {
+            width: 127px;
+            height: 129px;
+        }
+        .auto-style12 {
+            margin-left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style2" style="text-align: center;">
+                    <img alt="logo" class="auto-style11" src="obj/image/lolgo_fly.png"  /></td>
+                <td class="auto-style8" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:60px; font-weight: 900; font-style: normal; vertical-align: middle; text-align: center; text-transform: none; font-variant: normal; color: #006699;">Дорога в Вавилон</td>
+                <td class="auto-style2">
+                    <table class="auto-styl e5">
+                        <tr>
+                            <td colspan="2" style="text-align:center; font-size: 30px; font-weight: bold; color: #FFFFCC;" >
+                                <asp:LinkButton ID="LinkButton8" runat="server" Width="100%" Font-Size="30px" Font-Bold="True" Font-Italic="True" ForeColor="#FFFFCC" OnClick="LinkButton8_Click">Регистрация</asp:LinkButton></td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style7" colspan="2">                                
+                                <asp:LinkButton ID="LinkButton3"  visible="false" runat="server" OnClick="LinkButton3_Click" Width="100%" Font-Size="30px" Font-Bold="True" Font-Italic="True" ForeColor="#FFFFCC">Личный кабинет</asp:LinkButton>                                
+                            </td>
+                            
+                        </tr>
+                        <tr>                            
+                            <td class="auto-style7" style="color: #FFFFCC;  font-weight: bold;"> <asp:Label ID="Label3" runat="server" Text="Логин"></asp:Label></td>
+
+                            <td class="auto-style6">
+                                <asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style12" Width="100px" MaxLength="10" ></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style7" style="color: #FFFFCC;  font-weight: bold;">
+                                <asp:Label ID="Label4" runat="server" Text="Пароль"></asp:Label> </td>
+                            <td class="auto-style6">
+                                <asp:TextBox ID="TextBox2" runat="server" CssClass="auto-style12" Width="100px"  MaxLength="10" TextMode="Password" ></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style7">
+                                <asp:Button ID="Button1" runat="server" Text="Вход" OnClick="Button1_Click" BackColor="#006666" Font-Bold="True" Font-Size="25px" ForeColor="#FFFFCC"  />
+                            </td>
+                            <td class="auto-style6">
+                                <asp:Button ID="Button2" runat="server" Text="Выход" OnClick="Button2_Click" BackColor="#006666" Font-Bold="True" Font-Size="25px" ForeColor="#FFFFCC" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4"   style="vertical-align: top">
+                    <table class="auto-style5">
+                        <tr>
+                            <td>
+                                <asp:LinkButton  ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" Font-Bold="True" Font-Italic="True" ForeColor="#FFFFCC">Главная</asp:LinkButton>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click" BorderWidth="0px" Font-Bold="True" ForeColor="#FFFFCC" Font-Italic="True">Туры</asp:LinkButton>
+                            </td>
+                        </tr>                                                
+                        <tr>
+                            <td>
+                                <asp:LinkButton Visible="false" ID="LinkButton4" runat="server" BorderWidth="0px" Font-Bold="True" ForeColor="#FFFFCC" Font-Italic="True" OnClick="LinkButton4_Click">Мои туры</asp:LinkButton>
+                            </td>
+                        </tr>                                                
+                        <tr>
+                            <td>
+                                <asp:LinkButton Visible="false" ID="LinkButton5" runat="server" BorderWidth="0px" Font-Bold="True" ForeColor="#FFFFCC" Font-Italic="True" OnClick="LinkButton5_Click">Редактор туров</asp:LinkButton>
+                            </td>
+                        </tr>                                                
+                        <tr>
+                            <td>
+                                <asp:LinkButton Visible="false" ID="LinkButton6" runat="server" BorderWidth="0px" Font-Bold="True" ForeColor="#FFFFCC" Font-Italic="True" OnClick="LinkButton6_Click">Редактор брони</asp:LinkButton>
+                            </td>
+                        </tr>                                                
+                        <tr>
+                            <td>
+                                <asp:LinkButton Visible="false" ID="LinkButton9" runat="server" BorderWidth="0px" Font-Bold="True" ForeColor="#FFFFCC" Font-Italic="True" OnClick="LinkButton9_Click" >Редактор поездок</asp:LinkButton></td>
+                        </tr>                                                
+                        <tr>
+                            <td>
+                                 <asp:LinkButton Visible="false" ID="LinkButton10" runat="server" BorderWidth="0px" Font-Bold="True" ForeColor="#FFFFCC" Font-Italic="True" OnClick="LinkButton10_Click" >Редактор программ</asp:LinkButton></td>
+                        </tr>                                                
+                        <tr>
+                            <td>
+                                <asp:LinkButton Visible="false" ID="LinkButton7" runat="server" BorderWidth="0px" Font-Bold="True" ForeColor="#FFFFCC" Font-Italic="True" OnClick="LinkButton7_Click">Редактор профилей</asp:LinkButton>
+                            </td>
+                        </tr>                                                
+                    </table>
+                </td>
+                <td  style="vertical-align: top">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td style="vertical-align: top; background-color: cadetblue;" colspan="2"">
+                    <asp:Label ID="Label2" Visible="False" runat="server" Width="100%" Text="Вы авторизованы" Font-Bold="True" Font-Size="30px" ForeColor="#FFFFCC"></asp:Label>
+                    <asp:Label ID="Label1" Visible="False" runat="server" Width="100%" Text="Ошибка Авторизации!" Font-Bold="True" Font-Size="30px" ForeColor="#FFFFCC"></asp:Label>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
